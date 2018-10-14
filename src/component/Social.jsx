@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faLinkedin, faBitbucket, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const SocailContainer = styled.div`
 padding-top: 0px;
@@ -40,10 +40,6 @@ display: inline-block;
 `
 
 const accounts = [{
-  title: 'twitter',
-  link: 'https://twitter.com/thiscaal',
-  icon: faTwitter
-}, {
   title: 'github',
   link: 'https://github.com/sahalsaad',
   icon: faGithub
@@ -51,6 +47,14 @@ const accounts = [{
   title: 'linkedin',
   link: 'https://www.linkedin.com/in/sahalsaad',
   icon: faLinkedin
+}, {
+  title: 'twitter',
+  link: 'https://twitter.com/thiscaal',
+  icon: faTwitter
+}, {
+  title: 'bitbucket',
+  link: 'https://bitbucket.org/sahalswappo',
+  icon: faBitbucket
 }]
 
 const Social = () => (
