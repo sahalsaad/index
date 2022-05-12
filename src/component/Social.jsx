@@ -48,10 +48,6 @@ const accounts = [{
   link: 'https://www.linkedin.com/in/sahalsaad',
   icon: faLinkedin
 }, {
-  title: 'twitter',
-  link: 'https://twitter.com/thiscaal',
-  icon: faTwitter
-}, {
   title: 'bitbucket',
   link: 'https://bitbucket.org/sahalswappo',
   icon: faBitbucket
