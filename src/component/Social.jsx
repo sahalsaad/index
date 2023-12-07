@@ -47,10 +47,6 @@ const accounts = [{
   title: 'linkedin',
   link: 'https://www.linkedin.com/in/sahalsaad',
   icon: faLinkedin
-}, {
-  title: 'bitbucket',
-  link: 'https://bitbucket.org/sahalswappo',
-  icon: faBitbucket
 }]
 
 const Social = () => (
