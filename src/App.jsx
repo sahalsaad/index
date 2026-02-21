@@ -13,9 +13,9 @@ function App() {
       <ProfileCard />
 
       {/* Footer */}
-      <p className="absolute bottom-4 text-xs text-slate-400">
+      <div className="absolute bottom-4 text-xs text-slate-400">
         &copy; {new Date().getFullYear()} Sahal Saad
-      </p>
+      </div>
     </div>
   )
 }

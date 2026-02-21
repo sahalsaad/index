@@ -1,6 +1,8 @@
 import { Github, Linkedin } from 'lucide-react'
 import Icon from '@mdi/react'
 import {
+    mdiGithub,
+    mdiLinkedin,
   mdiLanguageCsharp,
   mdiLanguageJavascript,
   mdiLanguageTypescript,
@@ -27,12 +29,12 @@ const socialLinks = [
   {
     title: 'GitHub',
     href: 'https://github.com/sahalsaad',
-    icon: Github,
+    icon: mdiGithub,
   },
   {
     title: 'LinkedIn',
     href: 'https://www.linkedin.com/in/sahalsaad',
-    icon: Linkedin,
+    icon: mdiLinkedin,
   },
 ]
 
@@ -59,7 +61,7 @@ function ProfileCard() {
   const yearsOfExperience = new Date().getFullYear() - 2015
 
   return (
-    <Card className="relative w-full max-w-md overflow-hidden border-white/60 bg-white/70 backdrop-blur-xl shadow-2xl animate-fade-in-up">
+    <Card className="relative w-full max-w-md overflow-hidden border-white/60 bg-white/70 backdrop-blur-xl shadow-2xl animate-fade-in-up mb-8">
       {/* Gradient header band with tech icons */}
       <div className="h-36 bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 relative overflow-hidden">
         {/* Subtle pattern overlay */}
@@ -116,7 +118,7 @@ function ProfileCard() {
             Connect with me
           </p>
           <div className="flex justify-center gap-3">
-            {socialLinks.map(({ title, href, icon: Icon }) => (
+            {socialLinks.map(({ title, href, icon }) => (
               <a
                 key={title}
                 href={href}
@@ -125,7 +127,7 @@ function ProfileCard() {
                 rel="noopener noreferrer"
                 className="group flex items-center justify-center h-11 w-11 rounded-xl bg-slate-50 border border-slate-200/80 text-slate-500 transition-all duration-300 hover:bg-indigo-50 hover:border-indigo-200 hover:text-indigo-600 hover:shadow-md hover:shadow-indigo-100 hover:-translate-y-0.5"
               >
-                <Icon className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
+                <Icon path={icon} className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
               </a>
             ))}
           </div>
