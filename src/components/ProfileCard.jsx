@@ -101,10 +101,11 @@ function ProfileCard() {
 
         {/* Bio */}
         <p className="text-slate-600 text-sm leading-relaxed animate-fade-in-up-delay-2">
-          I&apos;m a full stack developer with over{' '}
-          <span className="font-semibold text-slate-700">{yearsOfExperience} years</span>{' '}
-          of experience. I love experimenting with new technologies and staying
-          updated with the latest trends in cyber, web, and information technology.
+          Full stack developer with{' '}
+          <span className="font-semibold text-slate-700">{yearsOfExperience}+ years</span>{' '}
+          of experience building scalable applications across cloud and web.
+          Passionate about clean architecture, DevOps practices, and turning
+          complex problems into elegant solutions.
         </p>
 
         <Separator className="my-5 mx-auto w-16 bg-gradient-to-r from-blue-300 to-indigo-300 h-0.5 rounded-full" />
